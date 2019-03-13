@@ -17,8 +17,9 @@ let willQuitApp = false;
 var windowState = { maximized: false }
 
 const globalShortcutMapping = {
-  'CmdOrCtrl+Alt+Left':'left',
-  'CmdOrCtrl+Alt+Right':'right',
+  'Cmd+Ctrl+Left':'left',
+  'Cmd+Ctrl+Right':'right',
+  'Cmd+Alt+Space':'play',
 };
 
 function initialTray(mainWindow) {

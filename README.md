@@ -21,20 +21,29 @@ Listen 1可以搜索和播放来自网易云音乐，虾米，QQ音乐三个主�
 
 生成安装包
 ---------
-全平台安装包
+#### 全平台安装包
 
     npm run dist
 
-Windows安装包
+#### Windows安装包
 
     npm run dist:win32
     npm run dist:win64
-    
-Mac安装包
+
+#### Mac安装包
+
+##### 简单版
 
     npm run dist:mac
-    
-Linux安装包
+
+#### 完全版
+
+首要,要求机器上安装有`node 8`(可以通过`nvm`切换),然后逐步执行一下命令:
+
+1. `tnpm ii`
+2. `CSC_IDENTITY_AUTO_DISCOVERY=false DEBUG=electron-builder ./node_modules/.bin/electron-builder --platform darwin`
+
+#### Linux安装包
 
     npm run dist:linux32
     npm run dist:linux64
